@@ -9,9 +9,7 @@ def containsDuplicates1(nums) -> bool:
 # Solution 2
 def containsDuplicates2(nums):
     nums.sort() #do NOT assign 'nums' to new value -> sort in-place instead. otherwise TypeError -> Object of Type None has no len
-    print(len(nums))
     for i in range(1, len(nums)):
-        print('i = ' + str(i))
         if nums[i-1] == nums[i]:
             return True
     return False
